@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="player">
+        <h2 id="songTitle">Song Title</h2>
+        <audio id="audioPlayer" hidden>
+            <source src="/songs/song1.mp3" type="audio/mpeg">
+        </audio>
+        <div class="progress-container">
+            <span id="currentTime">0:00</span>
+            <div class="progress-bar" id="progressBar">
+                <div id="progress"></div>
+            </div>
+            <span id="totalTime">0:00</span>
+        </div>
+        <div class="controls">
+            <button id="prevBtn"><ion-icon name="caret-back-circle-outline"></ion-icon></button>
+            <button id="playPauseBtn"><ion-icon name="pause-outline"></ion-icon></button>
+            <button id="nextBtn"><ion-icon name="caret-forward-circle-outline"></ion-icon></button>
+        </div>
+        <div class="playlist">
+            <ul id="playlist">
+                <li data-src="/songs/song1.mp3" data-title="Aishiteru 3">1. Aishiteru 3</li>
+                <li data-src="/songs/song2.mp3" data-title="Di saat aku mencintaimu">2. Di saat aku mencintaimu</li>
+                <li data-src="/songs/song3.mp3" data-title="Ikhlas">3. Ikhlas</li>
+                <li data-src="/songs/song4.mp3" data-title="Manut dalane gusti">4. Manut dalane gusti</li>
+                <li data-src="/songs/song5.mp3" data-title="Lewat angin wengi">5. Lewat angin wengi</li>
+                <li data-src="/songs/song6.mp3" data-title="Tekomu nggowo tresno">6. Tekomu nggowo tresno</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
